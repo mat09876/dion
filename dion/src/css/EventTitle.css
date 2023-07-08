@@ -1,0 +1,35 @@
+.title-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-container > div {
+    text-align: left;
+  }
+  .event-name {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 55px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+    
+  }
+
+  .event-date {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #F797D2;
+  }
+
+  .event-location {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+  }
