@@ -1,0 +1,30 @@
+.bookbutton-container {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    border:3px solid yellow;
+    color: white;
+  }
+
+.bookbutton-text {
+    width: 75%;
+    margin: 5px;
+    padding: 5px;
+    border: 3px solid red;
+    display: grid;
+    align-items: center;
+}
+
+.bookbutton {
+    width:  146px;
+    height: 50px;
+    padding: 10px 36px 10px 36px;
+    border-radius: 100px;
+    gap: 8px;
+    border: 3px solid green;
+    display: grid;
+    place-items: left;
+    background: linear-gradient(90.12deg, #E774BB 0.09%, #F87462 99.89%);
+    align-items: center;
+    text-align: center;
+}
