@@ -1,23 +1,25 @@
 import React from 'react';
 import "../css/PriceSection.css";
+import BuyTicket from './BuyTicket';
+import { Routes, Route, Link } from "react-router-dom";
 
 
 
 
+function BookButton() {
 
-const BookButton = () => {
-    function handleSubmit(e) {
-        e.preventDefault();
-        console.log('You clicked submit.');
-      }
     return (
-        <div class="bookbutton-container">        
+      <div>
+          <div class="bookbutton-container">        
             <div class="bookbutton">
-                Buy Now
+            <Link to="/BuyTicket">Buy Ticket</Link>
             </div>
         </div>
-
+        <Routes>
+          <Route path="/BuyTicket" element={<BuyTicket />} />
+        </Routes>
+      </div>
     );
-}
+  }
 
 export default BookButton;

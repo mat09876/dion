@@ -1,15 +1,17 @@
 import React from 'react';
 import Home from './components/Home';
 import About from './components/About';
+import BuyTicket from './components/BuyTicket';
 import Header from './components/Header';
 
-import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
+import { Routes, Route, Link } from "react-router-dom";
 
-export default function App() {
+
+function App() {
+
   return (
-    <Router>
-      <div>
-        <nav>
+    <div>
+              <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -17,20 +19,22 @@ export default function App() {
             <li>
               <Link to="/about">About</Link>
             </li>
+            <li>
+            <Link to="/BuyTicket">Buy Ticket</Link>
+            </li>
           </ul>
         </nav>
-
-        {/* 👇️ Wrap your Route components in a Routes component */}
         <Header/>
-        
-        <Routes>
-          
-          <Route path="/about" element={<About />} />
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </div>
-    </Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/BuyTicket" element={<BuyTicket />} />
+        <Route path="/Header" element={<Header />} />
+      </Routes>
+    </div>
   );
 }
 
 
+
+export default App;
